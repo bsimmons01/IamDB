@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		651A188F2D84CB9F0003E329 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 651A188E2D84CB9F0003E329 /* SFSafeSymbols */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		651A187A2D84C8990003E329 /* IamDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IamDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651A188F2D84CB9F0003E329 /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = IamDB;
 			packageProductDependencies = (
+				651A188E2D84CB9F0003E329 /* SFSafeSymbols */,
 			);
 			productName = IamDB;
 			productReference = 651A187A2D84C8990003E329 /* IamDB.app */;
@@ -94,6 +100,10 @@
 			);
 			mainGroup = 651A18712D84C8990003E329;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				651A188D2D84CB9F0003E329 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				651A18902D84CC8C0003E329 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 651A187B2D84C8990003E329 /* Products */;
 			projectDirPath = "";
@@ -324,6 +334,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		651A188D2D84CB9F0003E329 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		651A18902D84CC8C0003E329 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651A188E2D84CB9F0003E329 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651A188D2D84CB9F0003E329 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 651A18722D84C8990003E329 /* Project object */;
 }
